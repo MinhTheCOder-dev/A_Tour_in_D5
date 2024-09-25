@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Header */
+.link{
+    text-decoration: none;
+}
+header{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-image: url(../image/dragon.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; 
+    height: 80vh;
+}
+header h1{
+    margin-top: 20vh;
+    font-size: 5vw;
+    color: rgb(21, 24, 189);
+}
+header p{
+    margin-top: 10px;
+    font-size: 2vw;
+    color: rgb(21, 24, 189);
+}
