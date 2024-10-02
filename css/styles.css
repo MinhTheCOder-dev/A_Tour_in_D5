@@ -3,6 +3,9 @@ body{
     font-family: 'Montserrat', sans-serif;
     background-color:#004953;
 }
+#main_heading{
+    background-image: image();
+}
 
 /* Header */
 .link{
@@ -30,8 +33,11 @@ header p{
 }
 div #district_info{
     display: flex;
-    flex-direction: row;
+    flex-direction: column !important;
     justify-content: space-around;
+    padding: 10px;
+    font-size: 3vw;
+    align-items: center;
 }
 button {
     font-size: 30px;
@@ -44,6 +50,7 @@ button {
     cursor: pointer;
     margin: 10px;
     border-radius: 20px;
+    transition: transform 0.3s ease-in-out;
 }
 .box{
     display: inline-block;
@@ -54,10 +61,13 @@ button {
     vertical-align: middle;
     line-height: 200px;
     cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    
 }
 .box:hover{
     border: 1px solid #004953;
     color: #004953;
+    
 }
 .box a{
     display: block;
@@ -66,4 +76,15 @@ button {
     text-decoration: none !important;
     color: inherit !important;
 
+}
+.box{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    margin-top: 10vh; 
+}
+@media (max-width: 600px) {
+    .buttons-container {
+        justify-content: center; /* Align buttons horizontally in the middle on smaller screens */
+    }
 }
