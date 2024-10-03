@@ -1,0 +1,91 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ffcc00;
+}
+
+
+
+
+hr{
+    border-color:black;
+}
+.redirect-taskbar {
+    display: flex;
+    background-color: #333;
+    padding: 10px;
+    position: fixed;
+    justify-content: space-around;
+    align-items: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 20px;
+    font-size: 10px;
+}
+
+.redirect-taskbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.redirect-taskbar li {
+    margin: 0 10px;
+    padding:20px;
+}
+
+.redirect-taskbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.redirect-taskbar a:hover {
+    color: #ffcc00;
+}
+.history{
+    display: flex;
+    margin-top:100px;
+    font-size: larger;
+    justify-content: center;
+    align-items: center;
+    max-width: 50%;
+    margin-left:auto;
+    margin-right: auto;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+.history .fun-facts {
+    margin-top: 20px;
+}
+
+.history .fun-facts .head2 {
+    font-weight: bold;
+    text-align: center;
+}
+
+.history .fun-facts li {
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+.history .weather-info{
+    margin-top: 20px;
+}
+.history .weather-info .head2 {
+    text-align: center;
+    font-weight: bold;
+}
+
+.history .weather-info li {
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
