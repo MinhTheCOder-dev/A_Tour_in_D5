@@ -1,0 +1,82 @@
+.redirect-taskbar {
+    display: flex;
+    background-color: #333;
+    padding: 10px;
+    position: fixed;
+    justify-content: space-around;
+    align-items: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 20px;
+    font-size: 10px;
+    width:100%;
+}
+i{
+    font-size: 16px;
+    margin-right: 10px;
+}
+#container {
+    margin-top: 60px; /* Adjust this value to match the height of your navigation bar */
+}
+
+.redirect-taskbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.redirect-taskbar li {
+    margin: 0 10px;
+    padding:20px;
+}
+
+.redirect-taskbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.redirect-taskbar a:hover {
+    text-decoration: underline white;
+}
+.redirect-taskbars {
+    display: flex;
+    padding: 10px;
+    position:absolute;
+    backdrop-filter: blur(80%);
+    justify-content: space-around;
+    align-items: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 20px;
+    font-size: 10px;
+    width:100%;
+}
+.redirect-taskbars ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.redirect-taskbars li {
+    margin: 0 10px;
+    padding:20px;
+}
+
+.redirect-taskbars a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.redirect-taskbars a:hover {
+    text-decoration: underline white;
+}

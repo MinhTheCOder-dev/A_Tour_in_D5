@@ -1,6 +1,6 @@
 body{
     font-family: 'Montserrat', sans-serif;
-    background-color: #ffcc00;
+    background-color: white;
 }
 
 
@@ -8,43 +8,6 @@ body{
 
 hr{
     border-color:black;
-}
-.redirect-taskbar {
-    display: flex;
-    background-color: #333;
-    padding: 10px;
-    position: fixed;
-    justify-content: space-around;
-    align-items: center;
-    top: 0;
-    left: 0;
-    right: 0;
-    margin-bottom: 20px;
-    font-size: 10px;
-}
-
-.redirect-taskbar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-}
-
-.redirect-taskbar li {
-    margin: 0 10px;
-    padding:20px;
-}
-
-.redirect-taskbar a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 16px;
-    transition: color 0.3s ease;
-}
-
-.redirect-taskbar a:hover {
-    color: #ffcc00;
 }
 .history{
     display: flex;
@@ -55,6 +18,7 @@ hr{
     max-width: 50%;
     margin-left:auto;
     margin-right: auto;
+    color:#374151;
 }
 p {
     display: block;

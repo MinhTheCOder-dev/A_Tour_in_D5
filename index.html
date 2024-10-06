@@ -4,13 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" type = "text/css" href="./css/taskbar.css">
     <script src="./js/script.js"></script>
     <title>District 3</title>
 </head>
 <body>
-    <div>
-
-    </div>
+    <nav class="redirect-taskbars">
+        <ul>
+            <li><a href="index.html"><i class = "fa-solid fa-house-chimney"></i></a></li>
+            <li><a href="./sub_pages/facts.html"><i class="fa-solid fa-book"></i></a></li>
+            <li><a href="./sub_pages/food.html"><i class="fa-solid fa-bowl-food"></i></a></li>
+            <li><a href="./sub_pages/culture.html"><i class="fa-solid fa-binoculars"></i></a></li>
+            <li><a href="./sub_pages/FAQ.html"><i class="fa-solid fa-question"></i></a></li>
+            <li><a href="./sub_pages/link.html"><i class="fa-solid fa-link"></i></a></li>
+            <li><a href="./sub_pages/mapping.html"><i class="fa-regular fa-map"></i></a></li>
+            <li><a href="./sub_pages/About.html">Credit</a></li>
+        </ul>
+    </nav>
     <div id="container">
         <div id="main_heading">
             <header class="header">
@@ -20,25 +31,42 @@
         </div>
         <div id="district_info">
             <div class="box">
-                <button  type="button" onclick="location.href='./sub_pages/facts.html'">FACTS</button>
+                <button id = "1"  type="button" onclick="location.href='./sub_pages/facts.html'">
+                    <img src="./image/IMG_2590.jpg" alt = "">
+                    <div class="text-overlay">
+                        FACTS
+                    </div>
+                </button>
             </div>
             <div class="box">
-                <button  type="button" onclick="location.href='./sub_pages/culture.html'">Uncommon tourist attractions</button>
+                <button id = "2" type="button" onclick="location.href='./sub_pages/culture.html'">
+                    Uncommon tourist attractions
+                </button>
             </div>
             <div class="box">
-                <button  type="button" onclick="location.href='./sub_pages/food.html'">Food & Drink</button>
+                <button id = "3" type="button" onclick="location.href='./sub_pages/food.html'">
+                    Food & Drink
+                </button>
             </div>
             <div class="box">
-                <button  type="button" onclick="location.href='./sub_pages/mapping.html'">Guides</button>
+                <button id = "4" type="button" onclick="location.href='./sub_pages/mapping.html'">
+                    Guides
+                </button>
             </div>
             <div class="box">
-                <button  type="button" onclick="location.href='./sub_pages/FAQ.html'">FAQ</button>
+                <button id = "5" type="button" onclick="location.href='./sub_pages/FAQ.html'">
+                    FAQ
+                </button>
             </div>
             <div class="box">
-                <button  type="button" onclick="location.href='./sub_pages/About.html'">About us</button>
+                <button id = "6" type="button" onclick="location.href='./sub_pages/About.html'">
+                    About us
+                </button>
             </div>
             <div class="box">
-                <button  type="button" onclick="location.href='./sub_pages/link.html'">External links</button>
+                <button id = "7" type="button" onclick="location.href='./sub_pages/link.html'">
+                    External links
+                </button>
             </div>
         </div>
     </div>
