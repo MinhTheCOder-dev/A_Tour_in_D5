@@ -1,21 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
 body{
     font-family: 'Montserrat', sans-serif; 
-    background-image: linear-gradient(to right, rgba(18, 11, 106, 1) 0%, 50%, rgba(6, 11, 31, 1) 100%);
-
+    background: rgba(0,0,0,0.7) url(../image/Q3.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    right:0;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 div{
     display:block;
     unicode-bidi: isolate;
-}
-#main_heading{
-    background-image: image();/*for later use*/
 }
 .link{
     text-decoration: none;
 }
 #main_heading{
     margin:30px;
+
 }
 header{
     display: flex;
@@ -25,6 +33,7 @@ header{
     color: white;
     font-weight: bold;
     cursor: default;
+
 }
 header:hover {
     text-decoration: none !important;
@@ -38,17 +47,15 @@ header p{
     margin-top: 10px;
     font-size: 4vw;
 }
-div #district_info{
+#district_info{
     display: flex;
-    flex-direction: column !important;
-    justify-content: space-around;
-    padding: 10px;
-    font-size: 3vw;
-    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin:65vh auto;
 }
 button {
     position:relative;
-    display:block;
+    display: block;
     width: 500px;
     height: 500px;
     font-size: 50px;
@@ -58,18 +65,25 @@ button {
     cursor: pointer;
     border-radius: 20px;
     border:none;
-    transition: transform 0.3s ease-in-out;
+    display:block;
+    margin-bottom:30px;
 }
 .box{
-    display: inline-flex;
-    flex-direction: column;
-    margin: 10px;
-    text-align: center;
-    vertical-align: middle;
-    line-height: 200px;
-    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    margin-top: 10vh; 
     overflow: hidden;
-    border-radius: 20px;;
+    border-radius: 20px;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+
+    
+}
+.box.show {
+    opacity: 1;
+    transform: translateY(0);
 }
 .box a{
     display: block;
@@ -78,18 +92,6 @@ button {
     text-decoration: none !important;
     color: inherit !important;
 
-}
-.box{
-    display: inline-block;
-    position: relative;
-    justify-content: center;
-    flex-wrap: wrap; 
-    margin-top: 10vh; 
-}
-@media (max-width: 600px) {
-    .buttons-container {
-        justify-content: center; /* Align buttons horizontally in the middle on smaller screens */
-    }
 }
 .box .text-overlay {
     position: absolute;
@@ -103,6 +105,7 @@ button {
     height: 100%;
     border-radius: inherit !important;
     transition: transform 0.3s ease-in-out;
+    object-fit: cover;
 }
 img{
     object-fit: cover !important;

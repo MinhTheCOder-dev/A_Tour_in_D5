@@ -1,26 +1,30 @@
-window.addEventListener('scroll', function() {
-    const buttons = document.querySelectorAll('button');
+function isInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
+window.addEventListener('scroll', () => {
     const boxes = document.querySelectorAll('.box');
-
-    buttons.forEach(button => {
-        const buttonTop = button.getBoundingClientRect().top;
-        const buttonHeight = button.offsetHeight;
-
-        if (window.scrollY > buttonTop - window.innerHeight + buttonHeight) {
-            button.style.transform = 'scale(1)'; // Pop-up the button
-        } else {
-            button.style.transform = 'scale(0)'; // Hide the button
+    boxes.forEach((box) => {
+        if (isInViewport(box)) {
+            box.classList.add('show');
         }
     });
+});
+$(window).scroll(function() {
+    var windowTop = $(window).scrollTop();
+    var windowHeight = $(window).height();
 
-    boxes.forEach(box => {
-        const boxTop = box.getBoundingClientRect().top;
-        const boxHeight = box.offsetHeight;
+    $('.box').each(function() {
+        var boxTop = $(this).offset().top;
+        var boxHeight = $(this).height();
 
-        if (window.scrollY > boxTop - window.innerHeight + boxHeight) {
-            box.style.transform = 'scale(1)'; // Pop-up the box
-        } else {
-            box.style.transform = 'scale(0)'; // Hide the box
+        if (windowTop > (boxTop + boxHeight - windowHeight)) {
+            $(this).addClass('show');
         }
     });
 });
