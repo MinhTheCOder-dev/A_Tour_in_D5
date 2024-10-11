@@ -4,13 +4,13 @@ body{
     background: rgba(0,0,0,0.7) url(../image/Q3.jpg);
     background-size: cover;
     background-position: center;
-    height: 70vh;
+    height: 75vh;
     background-repeat: no-repeat;
     background-blend-mode: darken;
     right:0;
 }
 .container{
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
     padding: 20px;
 }
@@ -112,7 +112,4 @@ img{
 }
 .box:hover img{
     transform: scale(1.2);
-}
-.box:hover .text-overlay {
-    display: none !important;
 }
