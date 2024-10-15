@@ -5,41 +5,149 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../css/map.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" type = "text/css" href="../css/taskbar.css">
+    <link rel="stylesheet" type="text/css" href="../css/taskbar.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const faqItems = document.querySelectorAll(".more_specific");
+
+            faqItems.forEach((item) => {
+                item.addEventListener("click", () => {
+                    const day = item.querySelector('.day');
+                    if (day.style.maxHeight) {
+                        day.style.maxHeight = null; 
+                    } else {
+                        day.style.maxHeight = day.scrollHeight + "px";
+                    }
+                    item.classList.toggle("active");
+                });
+            });
+        });
+    </script>
     <title>GUIDE</title>
 </head>
 <body>
     <nav class="redirect-taskbar">
         <ul>
-            <li><a href="../index.html"><i class = "fa-solid fa-house-chimney"></i></a></li>
+            <li><a href="../index.html"><i class="fa-solid fa-house-chimney"></i></a></li>
             <li><a href="facts.html"><i class="fa-solid fa-book"></i></a></li>
             <li><a href="food.html"><i class="fa-solid fa-bowl-food"></i></a></li>
             <li><a href="culture.html"><i class="fa-solid fa-binoculars"></i></a></li>
             <li><a href="FAQ.html"><i class="fa-solid fa-question"></i></a></li>
-            <li><a href="link.html"><i class="fa-solid fa-link"></i></a></li>
             <li><a href="mapping.html"><i class="fa-regular fa-map"></i></a></li>
             <li><a href="About.html">Credit</a></li>
         </ul>
     </nav>
     <section class="guide">
-        <h2 class = "headline">GUIDE</h2>
+        <h2 class="headline">GUIDE</h2>
         <div class="itinerary">
-            <h3>For explorer</h3>
+            <h3 id="ex_h">For explorer</h3>
             <div class="explorer">
                 <ul>
                     <li>For explorers, District 3 is a paradise of culture and food. On a three-day trip, you can stay at the budget-friendly “Cola’s Homestay.” Here, you can enjoy your holiday in this bed-and-breakfast hotel.</li>
-                    <li>On the first day, after the free breakfast, you can go to the Vietnameses’ Southern Women museum. After that, a lunch with the city’s “Banh Xeo”. After that, you will have a religion choice of Buddhism Phap Hoa temple or the Tan Dinh church. For dinner, you can enjoy sea food at Rang Bien sea food restaurant. </li>
-                    <li>After that, for the second day, you can learn about the Vietnam War from the local’s perspective in the War Remanents museum. Then, enjoy your lunch with a crab sticky rice meal. For the afternoon, watch the kids practice sports at Ho Chi Minh city’s Children’s House or go to a local market named after a hero in the Vietnamese’s Revolution: Nguyen Van Troi. And to end the day, nothing beats an infamous bowl of pho.
-                    </li>
+                    <li>On the first day, after the free breakfast, you can go to the <strong>Vietnameses’ Southern Women museum</strong>. After that, a lunch with the city’s “Banh Xeo”. After that, you will have a religion choice of Buddhism Phap Hoa temple or the Tan Dinh church. For dinner, you can enjoy sea food at Rang Bien sea food restaurant.</li>
+                    <li>After that, for the second day, you can learn about the Vietnam War from the local’s perspective in the War Remanents museum. Then, enjoy your lunch with a crab sticky rice meal. For the afternoon, watch the kids practice sports at Ho Chi Minh city’s Children’s House or go to a local market named after a hero in the Vietnamese’s Revolution: Nguyen Van Troi. And to end the day, nothing beats an infamous bowl of pho.</li>
                     <li>On the departure day, ride on the Nhieu Loc boat for a last look at Saigon’s district 3, and enjoy a banh mi then hop on to the plane.</li>
                 </ul>
             </div>
             <div class="more_specific">
-                
+                <div class="more_h">
+                    <h3 id="first_h">Illustrative Trip</h3>
+                    <i id ="arrow" class="fa-solid fa-arrow-down"></i>
+                </div>
+                <div class="day">
+                    <h3 class="1">first day</h3>
+                    <ol>
+                        <li>On the first day, after breakfast, at 8 a.m you can go to the <a id = "L" href="https://maps.app.goo.gl/EnbfrvqqpANRTr8G8" target="_blank" rel="noopener noreferrer">Southern Vietnamese Women's Museum</a>, which is located at <strong>202 Vo Thi Sau</strong>.</li>
+                        <li>Then, you can enjoy your lunch at <strong>335 Dien Bien Phu</strong> with a cuisine banh xeo.</li>
+                        <li>If you are a Christian, you can visit the <a id = "L" href="https://maps.app.goo.gl/tWGFPC6wkP8wbx4E9" target="_blank" rel="noopener noreferrer">Tan Dinh church</a> at <b>289 Hai Ba Trung, ward 8</b> after the meal.</li>
+                        <li>Or if you are a Buddhist, <a id = "L" href="https://maps.app.goo.gl/xnRFycxHYNPFzpGY7" target="_blank" rel="noopener noreferrer">Phap Hoa temple</a> (870 Truong Sa, ward 14) is a solid choice.</li>
+                        <li>For dinner, you can enjoy seafood at <a id = "L" href="https://maps.app.goo.gl/Ldbr6MMeehgAQAUcA" target="_blank" rel="noopener noreferrer">Rang Bien seafood restaurant</a>, <b>(274D, Nam Ky Khoi Nghia street, ward Vo Thi Sau)</b> which provides fresh seafood for a reasonable price.</li>
+                    </ol>
+                </div>
+                <div class="day">
+                    <h3 class="2">second day</h3>
+                    <ol>
+                        <li>Then, on the second day, you can take a 3 dollars grab ride to the <a id = "L" href="https://maps.app.goo.gl/gYLHrHucqhfDDMoZ7" target="_blank" rel="noopener noreferrer">War Remnants museum</a> <b>(28 Vo Van Tan street, ward Vo Thi Sau)</b></li>
+                        <li>For lunch, a banh xeo with some herbs at <a id = "L" href="https://maps.app.goo.gl/FkpajS9KrRpkyVhJA" target="_blank" rel="noopener noreferrer">Banh Xeo 335/2</a> <b>(335/2 Dien Bien Phu street, ward 4)</b></li>
+                        <li>After that, you can either visit the <a id = "L" href="https://maps.app.goo.gl/GiYAHN9VLB96X8KL7" target="_blank" rel="noopener noreferrer">Children’s House of Ho Chi Minh city</a> (169D Nam Ky Khoi Nghia street, ward Vo Thi Sau) or observe how the local markets work at <a href="https://maps.app.goo.gl/gYLHrHucqhfDDMoZ7" target="_blank" rel="noopener noreferrer">Nguyen Van Troi market</a> (Le Van Sy road, ward 9).</li>
+                        <li>For reasonable dining, go to pho Anh (8D Ky Dong Street).</li>
+                    </ol>
+                </div>
+                <div class="day">
+                    <h3 class="3">third day</h3>
+                    <ol>
+                        <li>On your last day of the trip, you should go to <a id = "L" href="https://maps.app.goo.gl/AdFKRgRBYgaT5CVZA" target="_blank" rel="noopener noreferrer">Nhieu Loc boat</a> (671D Hoang Sa, ward 14) to take a last look at district 3. Then at 10:30 am, grab a banh mi at <a href="https://maps.app.goo.gl/6HBsjEfXu7haLuPg8" target="_blank" rel="noopener noreferrer">Banh Mi Hoa Ma</a> (53D Cao Duc Thang road, alley 3).</li>
+                        <li>Afterward, hop on your plane and go home.</li>
+                    </ol>
+                </div>
             </div>
         </div>
-
-
+        <div class="relaxer">
+            <h3 id="second_h">"Relaxers"</h3>
+            <div class="relax">
+                <ul>
+                    <li>For relaxers, district 3 is a symphony of cuisines and sightseeing. For a three-day trip, you can stay in the exclusive Sherwood Suites.</li>
+                    <li>On the first day, after the buffet for breakfast, you can go to the Intresco plaza. After that, a lunch with the city’s unique pho (the broth of pho changes depending on where you eat it, the north, the mid, and the south). After that, you can practice prayers at The Savior Line church or Diamond temple depending on your religion. For dinner, you can at the Rang Bien restaurant.</li>
+                    <li>Then, for the second day, you can learn about the Vietnam History at the Southern Women Museum. Then, enjoy your lunch with banh xeo. For the afternoon, you can have time to explore the alleys of the district or go to a local market named after a hero in the Vietnamese’s Revolution: Nguyen Van Troi. And to end the day, nothing beats a steak dish at Nam Son.</li>
+                    <li>On the departure day, ride on the Nhieu Loc boat for a last look at Saigon’s district 3, enjoy a banh mi then hop on to the plane.</li>
+                </ul>
+            </div>
+            <div class="more_specific">
+                <div class="more_h">
+                    <h3 id="first_h">Illustrative Trip</h3>
+                    <i class="fa-solid fa-arrow-down"></i>
+                </div>
+                <div class="day">
+                    <h3 class="1">first day</h3>
+                    <ol>
+                        <li>On the first day, after having the hotel’s buffet, at 8 am, you can go to the Intresco plaza (83 Ly Chinh Thang, alley 8).</li>
+                        <li>After 3 hours of shopping, your lunch at 288 Nam Ky Khoi Nghia with a northern style bowl of pho.</li>
+                        <li>If you are a Christian, you can visit the Saviour Line church at 38D Hai Ba Trung, alley 9 after the meal.</li>
+                        <li>Or if you are a Buddhist, Diamond temple (108/61 Tran Quang Dieu, alley 14) is a solid choice.</li>
+                        <li>For dinner, Rang Bien restaurant (274D, Nam Ky Khoi Nghia street, alley Vo Thi Sau) provides fresh seafood for a reasonable price.</li>
+                    </ol>
+                </div>
+                <div class="day">
+                    <h3 class="2">second day</h3>
+                    <ol>
+                        <li>At 8 am on the second day, take a 3 dollars grab ride to the Southern Women museum which is located at 202 Vo Thi Sau.</li>
+                        <li>For lunch, a banh xeo with some herbs at Banh Xeo 335/2 (located at 335/2 Dien Bien Phu street, alley 4).</li>
+                        <li>Optional choice: local markets work at Nguyen Van Troi market (Le Van Sy road, alley 9).</li>
+                        <li>For a harmony of spices and savoury of steaks, you can have a meal at Nam Son steak (200D Nguyen Thi Minh Khai, alley 6).</li>
+                    </ol>
+                </div>
+                <div class="day">
+                    <h3 class="3">third day</h3>
+                    <ol>
+                        <li>For the departure day, go to Nhieu Loc boat (671D Hoang Sa, alley 14) to take a last look at district 3.</li>
+                        <li>Then at 10:30 am, grab a banh mi at Banh Mi Chao Hoa Ma (53D Cao Duc Thang road, alley 3).</li>
+                        <li>Afterwards, hop on your plane and go home.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div class="accomodations">
+            <h3 id="first_h">Accommodations</h3>
+            <div class="accommodation">
+                <h4><a id = "L" href="https://www.sherwoodsuites.vn/vi" target="_blank" rel="noopener noreferrer">Sherwood Suites</a></h4>
+                <ul>
+                    <li>Address: 107/19 Nguyen Van Troi, alley 9, District 3, Saigon</li>
+                    <li>Price range: $150-200 per night</li>
+                    <li>Special offer: Buy 2 and get 1 free</li>
+                    <li>Facilities: 24-hour reception, air conditioning, free Wi-Fi, 24/7 room service, free parking, gym, and swimming pool</li>
+                </ul>
+            </div>
+            <div class="accommodation">
+                <h4><a id = "L" href = "https://maps.app.goo.gl/rwdJCRMSrqDjiDPJ7" target="_blank" rel="noopener noreferrer">Cola’s Homestay</a></h4>
+                <ul>
+                    <li>Address: 382/11 Nguyen Thi Minh Khai street.
+                    </li>
+                    <li>Price Range: $15</li>
+                    <li>The hotel is near Ben Thanh market, Tao Dan park and War Remnants museum.
+                    </li>
+                </ul>
+            </div>
+        </div>
     </section>
 </body>
 </html>

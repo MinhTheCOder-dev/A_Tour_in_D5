@@ -1,10 +1,14 @@
 body{
     font-family: 'Montserrat', sans-serif;
     background-color: white;
+    margin-bottom: 4rem;
 }
 
 
-
+.head2{
+    font-size: 30px;
+    text-align: center;
+}
 
 hr{
     border-color:black;

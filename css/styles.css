@@ -2,17 +2,12 @@
 body{
     font-family: 'Montserrat', sans-serif; 
     background: rgba(0,0,0,0.7) url(../image/Q3.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 75vh;
+    background-size:cover;
+    background-position:center;
+    height: 65vh;
     background-repeat: no-repeat;
     background-blend-mode: darken;
     right:0;
-}
-.container{
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 20px;
 }
 div{
     display:block;
@@ -78,8 +73,6 @@ button {
     opacity: 0;
     transform: translateY(100px);
     transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
-
-    
 }
 .box.show {
     opacity: 1;
@@ -113,3 +106,12 @@ img{
 .box:hover img{
     transform: scale(1.2);
 }
+#five{
+    background-color: black !important;
+    transition: 0.5s ease-out;
+}
+#five:hover{
+    background-color: rgb(44,45,45) !important;
+    transition: 0.5s ease-in-out;
+}
+
