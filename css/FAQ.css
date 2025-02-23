@@ -54,27 +54,31 @@ section{
     align-items: center;
     width: 100%;
 }
-.answer{
-    display: none;
-    background-color: #f2f2f2;
+.answer {
+    max-height: 0;
     overflow: hidden;
-    transition: max-height 2s ease;
+    transition: max-height 0.3s ease-out;
+    background-color: #f2f2f2;
 }
-.answer p{
-    padding-top:1rem;
+
+.items.active .answer {
+    max-height: 500px; 
+}
+
+.answer p {
+    padding: 1rem;
     line-height: 1.4;
     font-size: 1.2rem;
+    margin: 0;
 } 
-.items.active .answer {
-    height:auto !important;
-    padding-bottom:1rem ;
-    display: block;
-}
-.items.active .faq-question i{
-    transform: rotate(180deg);
-}
-.items i{
+
+.items i {
+    transition: transform 0.3s ease;
     background-color: #DCDCDC;
-    padding: 5px 7px 5px 7px;
+    padding: 5px 7px;
     border-radius: 50%;
+}
+
+.items.active i {
+    transform: rotate(540deg);
 }

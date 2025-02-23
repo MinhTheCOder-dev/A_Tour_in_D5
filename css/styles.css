@@ -1,13 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
 body{
     font-family: 'Montserrat', sans-serif; 
-    background: rgba(0,0,0,0.7) url(../image/Q3.jpg);
-    background-size:cover;
-    background-position:center;
-    height: 65vh;
-    background-repeat: no-repeat;
-    background-blend-mode: darken;
-    right:0;
+    background: rgb(219,211,216);
+    padding-bottom: 50vh;
+    margin:0;
+    padding-right:0;
+    overflow-x: hidden;
 }
 div{
     display:block;
@@ -21,14 +19,19 @@ div{
 
 }
 header{
-    display: flex;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../image/Q3.jpg);
+    background-size:cover;
+    background-position:top;
+    background-repeat: no-repeat;
+    display:flex;
     justify-content: center;
     flex-direction: column;
     text-align: center;
     color: white;
     font-weight: bold;
     cursor: default;
-
+    height: 100vh;
+    width: 100vw;
 }
 header:hover {
     text-decoration: none !important;
@@ -46,7 +49,6 @@ header p{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    margin:65vh auto;
 }
 button {
     position:relative;
@@ -61,7 +63,7 @@ button {
     border-radius: 20px;
     border:none;
     display:block;
-    margin-bottom:30px;
+    margin:0 0 0 70px;
 }
 .box{
     display: flex;
@@ -83,7 +85,6 @@ button {
     width: 100%;
     height: 100%;
     text-decoration: none !important;
-    color: inherit !important;
 
 }
 .box .text-overlay {
@@ -103,15 +104,15 @@ button {
 img{
     object-fit: cover !important;
 }
-.box:hover img{
-    transform: scale(1.2);
+.image:hover{
+    transform: scale(1.1);
 }
 #five{
     background-color: black !important;
-    transition: 0.5s ease-out;
+
 }
 #five:hover{
     background-color: rgb(44,45,45) !important;
-    transition: 0.5s ease-in-out;
+
 }
 

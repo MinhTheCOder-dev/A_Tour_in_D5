@@ -12,28 +12,12 @@ window.addEventListener('scroll', () => {
     boxes.forEach((box) => {
         if (isInViewport(box)) {
             box.classList.add('show');
-            box.classList.remove('hide');
-        }
-        else{
-            box.classList.remove('show');
-            box.classList.add('hide');
         }
     });
 });
-$(window).scroll(function() {
-    var windowTop = $(window).scrollTop();
-    var windowHeight = $(window).height();
-
-    $('.box').each(function() {
-        var boxTop = $(this).offset().top;
-        var boxHeight = $(this).height();
-
-        if (windowTop > (boxTop + boxHeight - windowHeight)) {
-            $(this).addClass('show');
-            $(this).removeClass('hide');
-        } else{
-            $(this).removeClass('show');
-            $(this).addClass('hide');
-        }
-    });
+window.addEventListener('scroll', () => {
+    const view = document.getElementById('district_info');
+    if (!isInViewport(view)) {
+        view.classList.remove('show');
+    }
 });
