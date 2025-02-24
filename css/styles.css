@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
 body{
     font-family: 'Montserrat', sans-serif; 
-    background: rgb(219,211,216);
+    background:  #0B1215;
     padding-bottom: 50vh;
     margin:0;
     padding-right:0;
@@ -70,9 +70,9 @@ button {
     justify-content: center;
     flex-wrap: wrap; 
     margin-top: 10vh; 
-    overflow: hidden;
     border-radius: 20px;
     opacity: 0;
+    overflow-block: 1;
     transform: translateY(100px);
     transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
@@ -115,4 +115,3 @@ img{
     background-color: rgb(44,45,45) !important;
 
 }
-
